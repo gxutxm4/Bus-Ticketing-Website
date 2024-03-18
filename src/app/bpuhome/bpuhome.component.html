@@ -1,0 +1,38 @@
+<div id="d1">
+<span id="sp1"><h1 *ngIf="!bpuNamelen">Welcome {{bpuName}}</h1>
+<button (click)="showBuses()" class="bbtn" id="sb">Show Buses</button>
+<button type="button" class="bbtn" id="ab" (click)="addBus()">Add a new Bus</button>
+<button type="button" class="bbtn" id="rb" (click)="showdeleteBus()">Remove Bus</button>
+
+<br><br></span>
+
+<span id="sp2"><button *ngIf="!bpuNamelen" (click)="bpulogout()" class="bbtn" id="lg">Logout</button></span>
+
+<table *ngIf="buses.length>0">
+    <tr>
+    <th>Bus No.</th>
+    <th>Source</th>
+    <th>Destination</th>
+    <th>Departure</th>
+    <th>Arrival</th>
+    <th>Add a Stop</th>
+</tr>
+<tr *ngFor="let b of buses">
+    <td>{{b.busNo}}</td>
+    <td>{{b.busSource}}</td>
+    <td>{{b.busDestination}}</td>
+    <td>{{b.busDeparturetime}}</td>
+    <td>{{b.busArrivalTime}}</td>
+    <td>hi</td>
+</tr>
+</table>
+
+<br><br>
+<div *ngIf="showdelete">
+    <div id="remove">
+        <input type="text" name="BusNo" class="inpfild" placeholder="Bus No." ngModel><br>
+        <button type="submit" class="btn" (click)="deleteBus()" >Remove Bus</button>
+    </div>
+</div>
+</div>
+

@@ -1,0 +1,13 @@
+div{
+    margin-top: 5px;
+    background-image: url("../../assets/not_found.jpg");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 700px;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+}

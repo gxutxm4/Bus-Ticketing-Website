@@ -1,0 +1,118 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 700px;
+}
+td,th{
+    border: 2px solid black;
+    text-align: center;
+
+}
+#form{
+    width:500px;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 3px solid steelblue;
+    padding: 20px 20px;
+
+}
+.inpfild{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid orange;
+    outline: none;
+    background: transparent;
+}
+
+
+.btn{
+    margin-top: 10px;
+    margin-left: 25%;
+    /* position: relative; */
+   height: 40px;
+    width: 50%;
+    background-color: orange;
+    border-radius: 10px;
+
+}
+#remove{
+    border: 2px solid steelblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 170px;
+    width: 300px;
+    margin-top: 10px;
+    padding: 2%;
+}
+#add{
+    border: 2px solid steelblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 10px;
+    padding: 2%;
+    margin-bottom: 200px;
+}
+#sp1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid gray; */
+    position: relative;
+    left: 0;
+}
+#sp2{
+   
+    /* border: 2px solid gray; */
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    
+}
+.bbtn{
+    width: 100px;
+    height: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    
+}
+#sb{
+    background-color: rgb(27, 223, 79);
+    color: aliceblue;
+    width: 150px;
+
+}
+#lg{
+    background-color: rgb(212, 58, 58);
+    color: aliceblue;
+    width: 150px;
+
+}
+#ab{
+    margin-left: 20px;
+    width: 150px;
+    background-color: gold;
+    color: black;
+}
+#rb{
+    margin-left: 20px;
+    width: 150px;
+    background-color: rgb(227, 152, 152);
+    color: black;
+
+
+}
+#d1{
+    width: 100%;
+    height: 500px;
+}

@@ -1,0 +1,15 @@
+<div id="dm">
+    <div id="dh">
+        <h1 *ngIf="!fnamelen" [(ngModel)]="fname" id="h3">Welcome {{fname}}</h1>
+
+        <h1 id="h1">Pune'S No. 1 Bus Booking Site</h1>
+        <form (ngSubmit)="findBuses()" #showbuses="ngForm">
+            <input type="text" name="source" class="input" placeholder="FROM" [(ngModel)]=source>
+            <input type="text" name="destination" class="input" placeholder="TO" [(ngModel)]=dest>
+            <input type="date" name="date" class="input">
+            <input type="submit" name="search" class="input" id="sbutton" value="SEARCH BUSES">
+        </form>
+        <h1 id="h2">We can take you anywhere you want.</h1>
+        
+    </div>
+</div>

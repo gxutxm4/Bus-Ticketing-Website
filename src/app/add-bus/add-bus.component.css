@@ -1,0 +1,52 @@
+#form{
+    width:500px;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    border: 3px solid steelblue;
+    padding: 20px 20px;
+
+}
+.inpfild{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid orange;
+    outline: none;
+    background: transparent;
+}
+.inpfil{
+    width: 50%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid orange;
+    outline: none;
+    background: transparent;
+
+}
+
+.btn{
+    margin-top: 10px;
+    margin-left: 25%;
+    font-size: 20px;
+    /* position: relative; */
+   height: 40px;
+    width: 50%;
+    background-color: orange;
+    border-radius: 10px;
+
+}
+#remove{
+    border: 2px solid steelblue;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-top: 10px;
+    padding: 2%;
+}

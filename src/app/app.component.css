@@ -1,0 +1,151 @@
+nav{
+    height: 50px;
+    background-color:  rgb(219, 219, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10PX;
+    font-size: 30px;
+    top: 0;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+    /* background-color: rgb(219, 219, 78); */
+}
+/* footer{
+    position: fixed;
+    bottom: 0%;
+    margin-bottom: 10px;
+    height: auto;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    position: relative;
+    
+    
+} */
+table,th{
+    /* margin-left: 20px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 10px;
+    /* text-align: left; */
+    margin: 2% auto;
+    
+}
+th{
+    font-size: 30px;
+}
+td,th{
+    padding-left: 30px;
+    padding-top: 0;
+}
+tr{
+    margin-top: 0;
+}
+#menu > ul{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    top: 00;
+    background-color: rgb(219, 219, 78);
+    color: black;
+}
+#menu ul{
+    list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+#menu ul a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 10px 15px;
+    display: block;
+}
+#a5{
+    color: black;
+    font-family: Fantasy;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 32px;
+    padding: 10px 15px;
+    display: block;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+#menu ul #l1,#l2,#l3{
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#menu ul ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #b8e994;
+}
+#menu ul ul {
+    float: none;
+}
+#menu ul ul li:hover{
+    border-left: 3px solid #2c3e50;
+    background-color: whitesmoke;
+}
+#menu ul ul ul{
+    top: 5px;
+    left: 100%;
+    
+}
+#menu ul ul{
+    display: none;
+}
+#menu ul li:hover ul{
+    display: block;
+}
+#l4{
+    float: right;
+    margin-right: 40px;
+    right: 0;
+    position: relative;
+    font-size: 30px;
+    
+}
+#a10{
+    /* margin-left: 20%; */
+    width: 60%;
+}
+#sp1{
+    font-size: 30px;
+    font-weight: 0;
+    font-family: 'Impact',sans-serif;
+    font-size: 30px;
+}
+.spf{
+    background-color: lightgrey;
+    height: 250px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+#spf1{
+    padding-left: 5%;
+    float: left;
+    width: 40%;
+}
+#spf2{
+    padding-right: 5%;
+    float: right;
+    width: 50%;
+}
+#dfooter{
+    /* background-color: #2c3e50; */
+    background-color: lightgrey;
+    height: 300px;
+}

@@ -1,0 +1,30 @@
+<div>
+    <form (ngSubmit)="addData(userreg)" #userreg="ngForm">
+        <label>Name:</label><br> 
+        <input type="text" name="userfName" ngModel><br>
+    
+        <label>Last Name:</label><br>
+        <input type="text" name="userlName"  ngModel><br>
+    
+        <label>Username:</label><br>
+        <input type="text" name="username"  ngModel><br>
+    
+        <label>Password:</label><br>
+        <input type="password" name="userPassword"  ngModel><br>
+    
+        <label>Email:</label><br>
+        <input type="email" name="userEmail"  ngModel> <br>
+    
+        <label>Contact No:</label><br>
+        <input type="number" name="userContactNo"  ngModel><br>
+    
+        <label>BirthDate:</label><br>
+        <input type="date" name="userDOB"  ngModel><br><br>
+        
+        <input type="submit" value="Register" class="btn"><br>
+        
+        <input type="reset" value="Clear All" class="btn"><br><br>
+        <a href="userlogin">Allreday a User - Login</a>
+    
+    </form>
+</div>

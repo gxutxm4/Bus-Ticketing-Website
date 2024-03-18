@@ -1,0 +1,18 @@
+body{
+    background-color: whitesmoke;
+}
+.h{
+    color: rgb(219, 219, 78);
+    font-size: 50px;
+}
+
+.p{
+    font-size: 20PX;
+}
+#d1{
+    /* width: 1000px; */
+    /* background-color: antiquewhite; */
+    color: black;
+    
+    margin-left: 100px;
+}

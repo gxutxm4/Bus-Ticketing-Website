@@ -1,0 +1,45 @@
+div{
+    background-image: url("../../assets/register_back.jpg");
+    color: black;
+    background-position: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    /* width: 1240px; */
+    background-color: whitesmoke;
+    /* margin-left: 20px; */
+    margin-top: 5px;
+    padding-top: 50px;
+    /* padding: 30px; */
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    font-size: 20px;
+    /* padding-left: 400PX; */
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    width: 350px;
+    padding : 20px;
+    padding-left: 50px;
+    background-color: rgb(219, 219, 78);
+    opacity: 0.9;
+}
+form label{
+    opacity: 1;
+}
+#btn{
+    color: aliceblue;
+    background-color: rgb(62, 62, 7);
+    height: 50px;
+    
+}
+input{
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(219, 219, 78);
+    border-radius: 10px;
+}

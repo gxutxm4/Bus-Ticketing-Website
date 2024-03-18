@@ -1,0 +1,76 @@
+<!-- <div>
+    <table>
+        <thead>
+        <tr>
+            <th>Bus Name</th>
+            <th>Departure</th>
+            <th>Arrival</th>
+            <th>Fare</th>
+            <th>Seats Available</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Abhinav Travels</td>
+            <td>08:30 PM</td>
+            <td>07:00 AM</td>
+            <td>800</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Pune</td>
+            <td>Latur</td>
+            
+        </tr>
+        <tr>
+            <td>CCTV &#x2705;</td>
+            <td> Pillows &#x2705;</td>
+            <TD>Charging &#x2705;</TD>
+            <td></td>
+            <td><button type="submit" id="bk">Book Ticket</button></td>
+        </tr>
+    </tbody>
+    </table>
+</div> -->
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Bus Name</th>
+                <th>Departure</th>
+                <th>Arrival</th>
+                <th>Fare</th>
+                <th>Seats Available</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let i of buses">
+            <hr>
+            <tr>
+                <td>{{i.bpuCompanyName}}</td>
+                <td>{{i.busDeparturetime}}</td>
+                <td>{{i.busArrivalTime}}</td>
+                <td>{{i.busFare}}</td>
+                <td>{{i.busTotalSeats}}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>{{i.busSource}}</td>
+                <td>{{i.busDestination}}</td>
+            </tr>
+            <tr>
+                <td *ngIf="i.busPillow">Pillow&#x2705;</td>
+                <td *ngIf="!i.busPillow"></td>
+                <td *ngIf="i.busCCTV"> CCTV &#x2705;</td>
+                <td *ngIf="!i.busCCTV"></td>
+                <td *ngIf="i.busCharging">Charging &#x2705;</td>
+                <td *ngIf="!i.busCharging"></td>
+                <td></td>
+                <!-- <input type="number" name="busesid" value="{{i.busId}}" readonly hidden ngModel> -->
+                <td><button type="submit" id="bk" (click)="bookticket(i)" >Book Ticket</button></td>
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

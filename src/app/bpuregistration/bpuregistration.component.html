@@ -1,0 +1,30 @@
+<div>
+    <form (ngSubmit)="addBPUData(bpureg)" #bpureg="ngForm">
+
+        <label>First Name</label><br>
+        <input type="text" name="bpufName"  ngModel><br>
+        
+        <label>Last Name</label><br>
+        <input type="text" name="bpulName"  ngModel><br>
+
+        <label>Company Name</label><br>
+        <input type="text" name="bpuCompanyName"  ngModel><br>
+
+        <label>Username</label><br>
+        <input type="text" name="bpuUsername"  ngModel><br>
+        
+        <label>Password</label><br>
+        <input type="password" name="bpuPassword"  ngModel><br>
+        
+        <label>Email</label><br>
+        <input type="email" name="bpuEmail"  ngModel> <br>
+        
+        <label>Contact No</label><br>
+        <input type="number" name="bpuContactno"  ngModel><br>
+        
+        <label>BirthDate</label><br>
+        <input type="date" name="bpuDOB"  ngModel><br><br>
+        
+        <input type="submit" value="Register" id="btn"><br>   
+    </form>
+</div>

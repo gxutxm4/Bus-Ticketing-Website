@@ -1,0 +1,93 @@
+<nav>
+  <div id="menu">
+    <ul>
+      <li id="l1"><span id="sp1"><img id="logo" src="./assets/logo.jpg" alt=""> seedBus</span></li>
+      <li id="l2"><a id="a1" routerLink="home">Home</a></li>
+      <li id="l3"><a id="a2" routerLink="about">About</a></li>
+
+      <li id="l4"><a href="#">Accounts
+          <ul>
+            <li *ngIf="fnamelen&&bpuNamelen"><a id="a3" routerLink="userreg">Registration</a></li>
+            <li *ngIf="fnamelen&&bpuNamelen"><a id="a4" routerLink="userlogin">Login</a></li>
+            <li *ngIf="!fnamelen">
+              <button type="submit" (click)="logout()" id="a5">Logout</button>
+              <!-- <form (click)="logout()">
+              <input type="submit" value="Logout" >
+            </form> -->
+            </li>
+          </ul>
+        </a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+<footer>
+  <div id="dfooter">
+    <span id="spf1" class="spf">
+      <h1>About Us</h1>
+      <p>seedBus is Pune's largest online bus ticketing platform
+        that has transformed bus travel in the country by
+        bringing ease and convenience to millions of Indians 
+        who travel using buses. Founded in 2006, seedBus is part of 
+        India's leading online travel company MakeMyTrip Limited
+      </p>
+    </span>
+    <span id="spf2" class="spf">
+      <table>
+        <tr>
+          <th>Bus Providers</th>
+          <th>Contact Us</th>
+          <th>Partners</th>
+        </tr>
+        <tr>
+          <td><a id="a6" routerLink="bpureg">BpuRegistration</a></td>
+          <td>seedbus&commat;gmail.com</td>
+          <td>Gautam Travels Pvt Ltd.</td>
+        </tr>
+        <tr>
+          <td><a id="a10" routerLink="bpulogin">bpulogin</a></td>
+          <td>9913121520</td>
+          <td>Zuck Bhai</td>
+        </tr>
+        <tr>
+          <td><a id="a7" routerLink="showbuses">Show Buses</a></td>
+          <td><a id="a4" routerLink="bpuhome">bpu-home</a></td>
+        </tr>
+      </table>
+    </span>
+  </div>
+
+
+
+
+
+
+  <!-- <table>
+      <tr>
+        <th>About Us</th>
+        <th>Bus Providers</th>
+        <th>Contact Us</th>
+        <th>Partners</th>
+      </tr>
+      <tr>
+        <td></td>
+      
+        
+        <td><a id="a6" routerLink="bpureg">BpuRegistration</a></td>
+        <td>seedbus&commat;gmail.com</td>
+        <td>Gautam Travels Pvt Ltd.</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a id="a10" routerLink="bpulogin">bpulogin</a></td>
+        <td>9913121520</td>
+        <td>Zuck Bhai</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><a id="a7" routerLink="showbuses">Show Buses</a></td>
+        <td><a id="a4" routerLink="bpuhome">bpu-home</a></td>
+      </tr>
+    </table> -->
+</footer>
