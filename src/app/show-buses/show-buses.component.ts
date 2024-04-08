@@ -49,10 +49,8 @@ export class ShowBusesComponent {
   bookticket(busid:Bus){
     // localStorage.setItem("busid", );
     // console.log(this.selectedbusid);
-    console.log(busid);
-    
-    
-    // this.router.navigateByUrl("/bookticket");    
+    // console.log(busid);
+    localStorage.setItem("buSID", busid.busId.toString());   
     this.router.navigateByUrl("/userpayment");
     
   }
