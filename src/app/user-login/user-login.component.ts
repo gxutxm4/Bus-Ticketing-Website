@@ -24,7 +24,7 @@ export class UserLoginComponent {
   // userPass:new FormControl('')
   // })
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router) {}
   
   validateUser() {
 
@@ -32,9 +32,10 @@ export class UserLoginComponent {
       async validated => {
         // localStorage.setItem("userNAME", this.userID);
         let temp: Userreg = validated;
-        console.log(temp);
+        // console.log(temp);
         if (temp == null) {
           swal("Wrong Credentials");
+          window.localStorage.clear();
         } else {
           // console.log(validated);
           localStorage.setItem("userfName", validated.userfName);

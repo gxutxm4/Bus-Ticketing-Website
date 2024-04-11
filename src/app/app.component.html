@@ -5,10 +5,11 @@
       <li id="l2"><a id="a1" routerLink="home">Home</a></li>
       <li id="l3"><a id="a2" routerLink="about">About</a></li>
 
-      <li id="l4"><a href="#">Accounts
+      <li id="l4"><a href="#">Account
           <ul>
             <li *ngIf="fnamelen&&bpuNamelen"><a id="a3" routerLink="userreg">Registration</a></li>
             <li *ngIf="fnamelen&&bpuNamelen"><a id="a4" routerLink="userlogin">Login</a></li>
+            <li *ngIf="!fnamelen"><button type="submit" (click)="viewacc()" id="a5">ViewAcc</button></li>
             <li *ngIf="!fnamelen">
               <button type="submit" (click)="logout()" id="a5">Logout</button>
               <!-- <form (click)="logout()">

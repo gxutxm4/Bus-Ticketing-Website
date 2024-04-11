@@ -11,6 +11,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AddBusComponent } from './add-bus/add-bus.component';
 import { BookTicketComponent } from './book-ticket/book-ticket.component';
 import { UserPaymentComponent } from './user-payment/user-payment.component';
+import { ViewAccountComponent } from './view-account/view-account.component';
 
 export const routes: Routes = [
     {path:"", component:HomePageComponent},
@@ -25,5 +26,6 @@ export const routes: Routes = [
     {path:"addbus", component:AddBusComponent},
     {path:"bookticket", component:BookTicketComponent},
     {path:"userpayment", component:UserPaymentComponent},
+    {path:"viewacc", component:ViewAccountComponent},
     {path:"**", component:NotFoundComponent}
 ];

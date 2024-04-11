@@ -12,13 +12,14 @@ import { ShowBusesComponent } from './show-buses/show-buses.component';
 import { AddBusComponent } from './add-bus/add-bus.component';
 import { BookTicketComponent } from './book-ticket/book-ticket.component';
 import { UserPaymentComponent } from './user-payment/user-payment.component';
+import { ViewAccountComponent } from './view-account/view-account.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterModule,
+  imports: [CommonModule, RouterOutlet, RouterModule, 
     HomePageComponent, AboutComponent, UserRegistrationComponent, UserLoginComponent, BPULoginComponent, BPURegistrationComponent,
-    BPUHomeComponent, ShowBusesComponent, AddBusComponent, BookTicketComponent, UserPaymentComponent
+    BPUHomeComponent, ShowBusesComponent, AddBusComponent, BookTicketComponent, UserPaymentComponent, ViewAccountComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -33,9 +34,14 @@ export class AppComponent {
 
   constructor(private router:Router){}
 
+  viewacc(){
+    console.log("In View Account");
+    this.router.navigateByUrl("/home");
+    // this.router.navigateByUrl("/viewacc");
+  }
+
   logout(){    
     window.localStorage.clear();
-    // this.router.navigateByUrl("/userlogin");
     window.location.reload();
     this.router.navigateByUrl("/home");
   }
