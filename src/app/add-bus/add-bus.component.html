@@ -4,7 +4,7 @@
 <br>
 <form  id="form" (ngSubmit)="addBusData(addBus)" #addBus="ngForm">
         
-    <H1>Add Bus</H1>
+    <h1>Add Bus</h1>
 
     <input type="number" name="bpuId" class="inpfild" placeholder="BPU ID" [(ngModel)]="bpuId" readonly hidden>
     <input type="text" name="bpuCompanyName" class="inpfild" placeholder="BPU Company Name" [(ngModel)]="bpuCompanyName" readonly>
@@ -14,11 +14,11 @@
     <input type="text" name="busDestination" class="inpfild" placeholder="Bus Destination" ngModel><br>
     <input type="number" name="busFare"  class="inpfild" placeholder="Bus Fare" ngModel><br><br>
     Bus Departure Time:
-    <input name="busDeparturetime"  class="inpfild" placeholder="Bus Departure time" ngModel type="time" step="1"><br><br>
+    <input type="time" name="busDeparturetime"  class="inpfild" placeholder="Bus Departure time" ngModel step="1"><br><br>
     <!-- <input type="time" name="busDeparturetime"  class="inpfild" placeholder="Bus Departure time" ngModel><br><br> -->
     Bus Arrival Time :
     <!-- <input type="time" name="busArrivalTime"  class="inpfild" placeholder="Bus Arrival Time" ngModel><br> -->
-    <input name="busArrivalTime"  class="inpfild" placeholder="Bus Departure time" ngModel type="time" step="1"><br><br>
+    <input type="time" name="busArrivalTime"  class="inpfild" placeholder="Bus Departure time" ngModel step="1"><br><br>
     <input type="number" name="busTotalSeats"  class="inpfild" placeholder="Bus Total Seats" ngModel><br>
     <input type="checkbox" name="busPillow"  value="busPillow" ngModel>Pillow Available <br>
     <input type="checkbox" name="busCCTV"  value="busCCTV" ngModel>CCTV Cameras<br>

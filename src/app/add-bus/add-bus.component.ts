@@ -25,11 +25,11 @@ export class AddBusComponent {
   constructor(private http:HttpClient, private router:Router){}
 
   addBusData(addBus:NgForm){
-    console.log(addBus.value);
+    // console.log(addBus.value);
     
     this.http.post(this.userBackendUrl+"/addBus", addBus.value).subscribe(
       async success=>{
-        if (await swal("Bus Added")) {
+        if (await swal("Bus Added")) {          
           this.router.navigateByUrl("/bpuhome");
         }
       },

@@ -16,9 +16,9 @@ import swal from 'sweetalert';
 export class UserLoginComponent {
 
   userregi: Userreg | undefined;
-  userBackendUrl: string = "http://localhost:8081";
-  userID: string = "";
-  userPass: string = "";
+  userBackendUrl:string = "http://localhost:8081";
+  userID:string = "";
+  userPass:string = "";
   // loginForm:FormGroup = new FormGroup({
   //   userID:new FormControl(''),
   // userPass:new FormControl('')
@@ -51,7 +51,5 @@ export class UserLoginComponent {
         this.router.navigateByUrl('/userlogin');
       }
     )
-    
-    let userfName = localStorage.getItem("userfName");
   }
 }

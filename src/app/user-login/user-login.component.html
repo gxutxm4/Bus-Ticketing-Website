@@ -1,13 +1,13 @@
 <div>
     <form (ngSubmit)="validateUser()" #userlogin="ngForm">
         <label>Username</label><br>
-        <input type="text" name="userId" id="" class="input" ngModel placeholder="Username" [(ngModel)]=userID><br><br>
+        <input type="text" name="userId" class="input" ngModel placeholder="Username" [(ngModel)]=userID><br><br>
 
         <label>Password</label><br>
         <input type="password" name="Password" class="input" ngModel placeholder="Password" [(ngModel)]=userPass><br><br>
 
-        <input type="submit" value="Login" id="btn" class="input">
+        <input type="submit" name="a" value="Login" id="btn" class="input">
         <input type="reset" value="Reset" id="btn1" class="input">  <br><br>
-        <a href="userreg">Not a User - Register</a>
+        <a href="userreg">Not a User - Register here</a>
     </form>
 </div>
