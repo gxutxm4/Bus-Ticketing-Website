@@ -34,16 +34,13 @@ export class AppComponent {
 
   constructor(private router:Router){}
 
-  viewacc(){
-    console.log("In View Account");
-    this.router.navigateByUrl("/home");
-    // this.router.navigateByUrl("/viewacc");
-  }
+  viewacc(){}
 
   logout(){    
     window.localStorage.clear();
     window.location.reload();
     this.router.navigateByUrl("/home");
+    // this.router.navigateByUrl("/viewacc");
   }
   
 }

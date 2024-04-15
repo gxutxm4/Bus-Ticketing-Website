@@ -9,7 +9,7 @@
           <ul>
             <li *ngIf="fnamelen&&bpuNamelen"><a id="a3" routerLink="userreg">Registration</a></li>
             <li *ngIf="fnamelen&&bpuNamelen"><a id="a4" routerLink="userlogin">Login</a></li>
-            <li *ngIf="!fnamelen"><button type="submit" (click)="viewacc()" id="a5">ViewAcc</button></li>
+            <li *ngIf="!fnamelen"><a id="va5" routerLink="viewacc">Viewacc</a></li>
             <li *ngIf="!fnamelen">
               <button type="submit" (click)="logout()" id="a5">Logout</button>
               <!-- <form (click)="logout()">
