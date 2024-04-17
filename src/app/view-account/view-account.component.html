@@ -1,2 +1,20 @@
 <br>
-<h4>Hello {{userName}}</h4>
+<h4>Hello {{userName}},</h4>
+<button (click)="myBookings()" class="" id="">Show Bookings</button>
+
+<table *ngIf="myBooking.length>0">
+    <tr>
+    <th>Booking Id</th>
+    <th>Bus Id</th>
+    <th>User ID</th>
+    <th>BPU ID</th>
+    <th>Fare</th>
+</tr>
+<tr *ngFor="let myb of myBooking">
+    <td>{{myb.userId}}</td>
+    <td>{{myb.busId}}</td>
+    <td>{{myb.userId}}</td>
+    <td>{{myb.bpuId}}</td>
+    <td>{{myb.bookingFare}}</td>
+</tr>
+</table>
