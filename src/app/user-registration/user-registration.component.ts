@@ -15,7 +15,6 @@ import swal from 'sweetalert';
 })
 export class UserRegistrationComponent {
   
-  // userregi:Userreg|undefined;
   userBackendUrl:string="http://localhost:8081";
 
   constructor(private http:HttpClient, private router:Router){}

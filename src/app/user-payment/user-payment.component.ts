@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import swal from 'sweetalert';
 import { Bus } from '../Entity/Bus';
+import { Bookings } from '../Entity/Bookings';
 
 @Component({
   selector: 'app-user-payment',
@@ -44,6 +45,16 @@ export class UserPaymentComponent {
     busDropPoints: []
   };
 
+  mybooking:Bookings = {
+    bookingId: 0,
+    busId: 0,
+    userId: 0,
+    bpuId: 0,
+    bookingFare: 0
+  };
+
+  
+
   constructor(private http:HttpClient, private router:Router){
     this.bookticket();
   }
@@ -52,10 +63,8 @@ export class UserPaymentComponent {
     this.http.get<Bus>(this.userBackendUrl+"getBusDetailsbybusId/"+localStorage.getItem("buSID")).subscribe(
       buses=>{
         console.log(localStorage.getItem("buSID"));
-        console.log(typeof(this.busId));
-                
-        console.log("Gautam");
-        console.log(buses);
+        localStorage.setItem("bpid", buses.bpuId.toString());
+        localStorage.setItem("busF", buses.busFare.toString());
         this.bus = buses;        
       },
       error=>{
@@ -64,8 +73,21 @@ export class UserPaymentComponent {
     )
   }
 
-  bookticketpay(){
-    swal("Ticket Booked");
+  bookticketpay(myBooking:NgForm){
+    this.http.post(this.userBackendUrl+"/addbooking", myBooking.value).subscribe(
+      myticket=>{
+        swal("Added");
+        console.log(myticket);
+        this.router.navigateByUrl("");
+        
+      }, error=>{
+        swal("Booking Failed.");
+        console.log(error);
+        
+        this.router.navigateByUrl("");
+      }
+    )
+
   }
 
 }

@@ -10,7 +10,13 @@
             <div><img id="sc" src="../../assets/payemt.jpg" alt="Loading"></div><br>
             <div id="df">Amount to be Paid: {{bus.busFare}}</div><br>
             <div>
-                <button type="submit" id="btn" (click)="bookticketpay()">Pay</button>
+                <form (ngSubmit)="bookticketpay(myBooking)" #myBooking="ngForm">
+                    <input type="number" name="busId" readonly hidden>
+                    <input type="number" name="userId" readonly hidden>
+                    <input type="number" name="bpuId" readonly hidden>
+                    <input type="number" name="bookingFare" readonly hidden>
+                    <input type="submit" value="Pay" id="btn">
+                </form>
             </div>
         </div>
     </div>

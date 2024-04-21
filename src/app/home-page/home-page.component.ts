@@ -3,8 +3,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
-import { Bus } from '../Entity/Bus';
-import swal from 'sweetalert';
 
 @Component({
   selector: 'app-home-page',
@@ -27,6 +25,8 @@ export class HomePageComponent {
   findBuses(){
     localStorage.setItem("busSource", this.source);
     localStorage.setItem("busDest", this.dest);
+    // console.log(this.source+" "+this.dest);
+    
     this.router.navigateByUrl("/showbuses");
   }
 
